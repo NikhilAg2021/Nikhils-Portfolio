@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;   
+
+}
+::-webkit-scrollbar { display: none; }
+/* ----------------Designing the Nav Bar------------------- */
+.container{
+    
+    max-width: 97vw;
+    padding: 0 ;
+   
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index:100;
+    background: rgb(160, 119, 214);
+    color: white;
+    animation:scroll-down;
+}
+@keyframes scroll-down {
+            
+}
+.navbar .container{
+    margin-top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    margin-left:20px;
+}
+.navbar .logo span{
+    font-family: 'Poppins','sans-serif';
+    color:rgb(240, 151, 8);
+    font-size: 24px;
+    font-weight: 700px;
+}
+
+.navbar .logo a{
+    font-family: 'poppins';
+    font-size: 18px;
+    font-weight: 700px;
+    
+   
+}
+.navbar.sticky{
+    padding:15px 0;
+    background:cyan;
+}
+.navbar .menu li{
+    
+    display:inline-block;
+    margin-right: 0px;
+}
+
+.navbar .menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins','sans-serif';
+    font-size: 18px;
+    font-weight: 500px;
+    margin-left:20px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li :hover{
+    color:rgb(240,151,8);
+    cursor: pointer;
+    font-weight:bold;
+}
+
+
+
+/* ----------------Designing Home Section------------------*/
+
+.home{
+    display:flex;
+    background: lavender no-repeat center;
+    height:100vh;
+    width:100vw;
+    min-height: 500px;
+    font-family: 'Poppins';
+
+
+}
+.home .container{
+    display:flex;
+    flex-direction: row;
+    width:100vw;
+    height:100vh;
+}
+.home-title{
+    font-size: 40px;
+    letter-spacing: 1em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.home .home-image{
+    width: 50vw;
+    height:99vh;
+    display:inline-flex;
+    float:right;
+       
+}
+.home-content{
+    position: absolute;
+    margin-left: 40vw;
+    margin-top: 30vh;
+}
+.social_links{
+    margin-top:40px;
+    display: flex;
+}
+.social_links a{
+    text-decoration:none;
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:gray;
+    color:white;
+    line-height:1;
+    margin-right:8px;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+
+}
+.social_links a:hover{
+    background:rgb(240,151,8);
+    transform: scale(1.2);
+}
+
+.home .home-content .line1{
+    font-size:27px;
+}
+.home .home-content .line1 span{
+
+font-weight: bold;
+}   
+
+.home .home-content .line2{
+    font-size:75px;
+    font-weight: 600px;
+    margin-left:-3px;
+}
+
+.home .home-content .line3{
+    font-size:27px;
+    margin: 5px 0;
+    margin-top: 25px;
+}
+/* .home .home-content .line3 span{
+    color:rgb(240, 151, 8);
+    font-weight:bold;
+} */
+
+.home .home-content .hire-me{
+    margin-left: 1em;
+}
+.wrapper{
+    display: flex;
+}
+.wrapper .dynamic-text{
+    margin-left:15px;
+    line-height:90px;
+    height:80px;
+    overflow: hidden;
+
+}
+.wrapper .dynamic-text li{
+    display:flex;
+    list-style:none;
+    color:rgb(240, 151, 8);
+    font-size:50px;
+    font-weight:600;
+    text-align:center;
+    justify-content:center;
+    align-items:center; 
+    font-family: 'ubuntu','sans-serif';
+    position:relative;
+    top:0;
+    animation: slide 6s steps(4) infinite;
+}
+@keyframes slide {
+    100%{
+        top:-360px;
+    }
+    
+}
+
+.dynamic-text li span{
+    position:relative;
+}
+.dynamic-text li span::after{
+    content: "";
+    position:absolute;
+    left:0;
+    height:100%;
+    background: lavender;
+    width:100%;
+    border-left: 2px solid rgb(240, 151, 8);
+    animation: typing 1.5s steps(10) infinite;
+}
+@keyframes typing {
+    100%{
+        left:100%;
+        margin: 0 -35px 0 35px;
+    }
+    
+}
+
+
+/* -----------------------About designing---------------------------------- */
+
+.about{
+    display:flex;
+    flex-direction: column;
+    background-color:lavender;
+    font-family: 'Poppins';
+ 
+}
+.about .container{
+    display:flex;
+    flex-direction:row;
+    width:100vw;
+    height:100vh;
+
+}
+ .about #about-title{
+    padding-top:3rem;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    font-weight: bold;
+    letter-spacing: 0.1em ;
+    font-size: 50px;
+    color:rgb(240, 151, 8);
+}
+
+#about-me
+{
+    font-size: 40px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    position:absolute;
+    margin-left:0;
+    height:100%;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+.description{
+    display:block;
+    padding:5vw;
+   
+    
+   
+}
+.description-title{
+    padding: 20px;
+    font-weight: 600;
+    font-size:30px;
+    font-family: "Ubuntu";
+}
+.description-title span{
+    font-size:30px;
+    justify-content: center;
+    text-align: center;
+    color:rgb(240,151,8);
+}
+
+.description p{
+    text-align: justify;
+    position:relative;
+    margin-left: 0;
+    width: 55vw;
+    flex-wrap: auto;
+    line-height: 1.5em;
+    font-weight: italic;
+    font-family: "Poppins";
+    font-size: 1.5em;
+
+}
+#about-image{
+    width: 30vw;
+    height:80vh;
+    display:inline-flex;
+    object-fit: contain;
+    float:right;
+    margin-right: 0px;
+    
+}
+/* ------------Styling of Skills----------------- */
+    .skills{
+        display:flex;
+        flex-direction:column;
+        background: lavender no-repeat center;
+        height:100vh;
+        width:100vw;
+        min-height: 500px;
+        font-family: 'Poppins';
+
+
+    }
+.skills .container{
+    display:flex;
+    flex-direction: row;
+    
+}
+.skills #skills_title{
+
+        padding-top:3rem;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        font-weight: bold;
+        letter-spacing: 0.1em ;
+        font-size: 50px;
+        color:rgb(240, 151, 8);
+   
+}
+/* .skills #skills_title span{
+    color: lavenderblush;
+} */
+.skills #skills_description{
+    
+    width:60vw;
+    height:auto;
+    margin-left:20%;
+    margin-top:20px;
+
+    font-family: 'Poppins','sans-serif';
+    font-size:18px;
+    font-weight: 500;
+    text-align: center;
+
+
+}
+.skills_strip{
+    height: 100vh;
+    font-size: 40px;
+    letter-spacing: 1em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+
+    position: absolute;
+    right:0px;
+
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width:100vw;
+    height:auto;
+
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-family: 'Ubuntu','sans-serif';
+    font-weight: bold;
+}
+.skills .skills-content .column{
+    width:50vw;
+    height:auto;
+
+}
+.skills .skills-content .column .bars{   
+    margin-bottom: 20px;
+   
+}
+.skills .skills-content .right{
+    width: 40%;
+    height: auto;
+    padding: 100px;
+}
+.skills .skills-content .left{
+    width: 40%;
+    height: auto;
+    padding: 100px;
+}
+
+.skills .skills-content .column .info{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column .line{
+    height:5px;
+    width:100%;
+    background:lightgrey;
+    position: relative;
+}
+
+.skills .skills-content .column .line::before{
+    content: '';
+    position: absolute;
+    height:100%;
+    width:80%;
+    background: rgb(240,151,8);
+}
+.skills .skills-content .left .html::before{
+    width:100%;
+}
+.skills .skills-content .left .css::before{
+    width:80%;
+}
+.skills .skills-content .left .js::before{
+    width:75%;
+}
+.skills .skills-content .left .react::before{
+    width:10%;
+}
+.skills .skills-content .left .python::before{
+    width:50%;
+}
+
+#skill-design{
+    font-size: 100px;
+}
+
+.skills .skills-content .right .photoshop::before{
+    width:92%;
+}
+.skills .skills-content .right .premier-pro::before{
+    width:80%;
+}
+.skills .skills-content .right .after-effects::before{
+    width:76%;
+}
+.skills .skills-content .right .c::before{
+    width:60%;
+}
+.skills .skills-content .right .java::before{
+    width:70%;
+}
+
+
+/* ---------------------------PROJECT STYLING------------------ */
+.project{
+    display:flex;
+    flex-direction: column;
+    background-color:lavender;
+    font-family: 'Poppins';
+    
+ 
+}
+ .project #project-title{
+     padding-top:3rem;
+     text-align: center;
+     font-family: 'Roboto','sans-serif';
+     font-weight: bold;
+     letter-spacing: 0.1em ;
+     font-size: 50px;
+     color:rgb(240, 151, 8);
+}
+
+#project-strip
+{
+    font-size: 40px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    position:absolute;
+    margin-left:0;
+    height:100%;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.project .container{
+   display: flex;
+   flex-wrap: wrap;
+   gap:1.5rem;  
+   padding:2rem 0;
+   margin-left: 10%;
+   margin-right:10%;
+  
+   
+}
+.project .container .box{
+    flex: 1 1 20rem;
+    height:20rem;
+    position:relative;
+    overflow:hidden;
+    /* border:1rem solid #fff; */
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.project .container .box img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    position: relative;
+    z-index:1;
+}
+.project .container .box:hover img{
+    height:75%;
+    width:75%;
+}
+
+.project .container .box h3{
+    position: absolute;
+    bottom: 1rem;
+    left:1rem;
+    font-size:1.5rem;
+    color:#333;
+    text-transform: uppercase;
+
+}
+.project .container .box .icons{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+}
+
+.project .container .box .icons a:hover{
+    background: rgb(240, 151, 8);
+    cursor:pointer;
+    transform: scale(1.2);
+}
+.project .container .box .icons a{
+    display:block;
+    height:2rem;
+    width:2rem;
+    border-radius: .5rem;
+    background:#eee;
+    color:#333;
+    font-size:1.2rem;
+    line-height:2rem;
+    text-align: center;
+    margin-bottom:1rem;
+    text-decoration: none;
+}
+.project .container .box img:hover{
+    transform: scale(1.2);
+}
+/* ----------------Styling of Services ---------------*/
+
+.education{
+    display:flex;
+    flex-direction:column;
+    background: lavender no-repeat center;
+    height:100vh;
+    width:100vw;
+    min-height: 500px;
+    font-family: 'Poppins';
+
+
+}
+.education .container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;   
+}
+.education #education_title{
+    padding-top:2rem;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    font-weight: bold;
+    letter-spacing: 0.1em ;
+    font-size: 50px;
+    color:rgb(240, 151, 8);
+}
+
+.education_strip{
+    height: 100%;
+    font-size: 40px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    
+
+    position: absolute;
+    right:0px;
+
+} 
+
+.education .container .box{
+    width:27rem;
+    margin:4rem 1rem;
+    padding-left:3rem;
+    border-left: .2rem solid #fff;
+    position: relative; 
+    
+     
+}
+
+
+.education .container .box span{
+    font-size:1.3rem;
+    font-weight: 600;
+    background:#222;
+    color:#fff;
+    border-radius:8rem;
+    padding: .4rem 1rem;
+
+}
+
+.education .container .box h3{
+    font-size:1.5rem;
+    /* color:#fff; */
+    color:rgb(240, 151, 8);
+    padding:1rem 0;
+
+
+}
+
+.education .container .box i{
+    position: absolute;
+    top:-1.5rem;
+    left:-2.5rem;
+    height:5rem;
+    width:5rem;
+    border-radius:50%;
+    line-height :5rem;
+    text-align:center;
+    font-size:2rem;
+    color:#fff;
+    background: rgb(240, 151, 8);
+
+}
+.education .container .box p{
+    font-size:18px;
+    font-family: 'Ubuntu','sans-serif';
+}
+/* .education .container .school_images{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    
+}
+.education .container .school_images .dbpc img{
+    width:50%;
+    height:auto;
+    margin-left:5vw;
+    opacity:0.7;
+}
+.education .container .school_images .dbpc p{
+    position: relative;
+    margin-left:15vw;
+    top:20vh;
+    z-index:20;
+    font-size:24px;
+    font-weight:600;
+    font-family: "ubuntu",'sans-serif'; 
+    line-height:1.9;
+    letter-spacing: 0.2em;
+    color: black
+}
+.education .container .school_images .vit img{
+    width:120%;
+    height:auto;
+    margin-top:5vh;
+    margin-right:5vw;
+    opacity:0.7;
+}
+.education .container .school_images .vit p{
+    position: relative;
+    margin-left:10vw;
+    top:18vh;
+    z-index:20;
+    font-size:24px;
+    font-weight:600;
+    font-family: "ubuntu",'sans-serif'; 
+    line-height:1.9;
+    letter-spacing: 0.2em;
+    color: black
+} */
+
+/* ------------------Styling of CONTACTS SECTION------------------- */
+.contact{
+    display:flex;
+    flex-direction: column;
+    background-color:lavender;
+    height:100vh;
+    width:100vw;
+    font-family: 'Poppins';
+    
+ 
+}
+ .contact #contact-title{
+     padding-top:3rem;
+     text-align: center;    
+     font-family: 'Roboto','sans-serif';
+     font-weight: bold;
+     letter-spacing: 0.1em ;
+     font-size: 50px;
+     color:rgb(240, 151, 8);
+}
+.contact .container p{
+    position: absolute;
+    margin-top: 1em;
+    font-size:34px;
+    font-weight:bold;
+    font-family: 'sans-serif';
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+#contact-strip
+{
+    font-size: 40px;
+    letter-spacing: 0.5em;
+    text-align: center;
+    background-color: rgb(240, 151, 8);
+    font-weight:bold;
+    
+    position:absolute;
+    margin-left:0;
+    height:100%;
+
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+.contact .container{
+   display: flex;
+   flex-direction: row;
+   align-items:center;
+   justify-content:space-between;
+   flex-wrap:wrap;  
+   margin-left: 10%;
+   margin-right:10%;
+  
+   
+}
+
+.contact .content{
+    display:flex;
+    flex-direction: row; 
+    flex-wrap:wrap;    
+    
+}
+.contact .container .content .info{
+    position: relative;
+    margin-top:5em; 
+}
+.contact .container .content .info h3{
+   
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+    color:black;
+    padding:0.5rem 0;
+    font-weight: normal;
+    
+}
+.contact .container .content .info h3 i{
+    padding-right:1rem;
+    color:var(--yellow);
+}
+.contact .container .content form{
+    flex: 1 1 45rem;    
+    padding:0.5rem;
+    margin:1rem;
+    margin-bottom:4rem;
+}
+
+.contact .container .content form .box{
+    padding:1rem;
+    margin:1rem;
+    background:#333;
+    color:#fff;
+    text-transform: none;
+    font-size:1.1rem;
+    width:100%;
+}
+.contact .container .content form .message{
+    height:10em;
+    resize:none;
+}
+.contact .container form .box::placeholder{
+    text-transform:capitalize;
+}
+
+/* --------------------BUTTONS--------------------------- */
+.button{
+
+    background:rgb(240, 151, 8);
+    position:relative;
+    font-weight: 600;
+    margin-top:3vh;
+    border-radius:2em;
+    border:none;
+    width:8em;
+    height:3em;
+}
+.button:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
+.button a{
+    text-decoration: none;
+    color:black;
+}
+
+.resume{
+    width:15em;
+    font-size:18px;
+}
+
+.send{
+    align-items: center;
+    justify-content:center;
+}
+
+/* ----------------------------------FOOTER-------------------------- */
+.footer{
+    display:flex;
+    flex-direction: column;
+    background:lavender;
+    background: rgb(160, 119, 214);
+    color: white;
+    width:100vw;
+}
+.footer .container .social_links{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin:10px;
+}
+
+/* canvas.particles-js-canvas-el{
+    position: absolute;
+    top:0;
+    left:25vw;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    margin:0;
+} */
