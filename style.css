@@ -231,7 +231,7 @@ font-weight: bold;
     display:flex;
     flex-direction:row;
     width:100vw;
-    height:100vh;
+    height:auto;
 
 }
  .about #about-title{
@@ -246,7 +246,7 @@ font-weight: bold;
 
 #about-me
 {
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: 0.5em;
     text-align: center;
     background-color: rgb(240, 151, 8);
@@ -282,7 +282,7 @@ font-weight: bold;
 .description p{
     text-align: justify;
     position:relative;
-    margin-left: 10%;
+    margin-left: 1em;
     width: 55vw;
     flex-wrap: auto;
     line-height: 1.5em;
@@ -336,7 +336,7 @@ font-weight: bold;
     width:60vw;
     height:auto;
     margin-left:20%;
-    margin-top:20px;
+    
 
     font-family: 'Poppins','sans-serif';
     font-size:18px;
@@ -365,7 +365,7 @@ font-weight: bold;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
+    margin-top: -2em;
     width:100vw;
     height:auto;
 
@@ -472,7 +472,7 @@ font-weight: bold;
 
 #project-strip
 {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0.5em;
     text-align: center;
     background-color: rgb(240, 151, 8);
@@ -480,7 +480,7 @@ font-weight: bold;
     
     position:absolute;
     margin-left:0;
-    height:100%;
+    height:auto;
 
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -559,12 +559,15 @@ font-weight: bold;
     display:flex;
     flex-direction:column;
     background: lavender no-repeat center;
-    height:100vh;
     width:100vw;
+    height:auto;
     min-height: 500px;
     font-family: 'Poppins';
 
 
+}
+.education h2{
+    margin-top: 2em;
 }
 .education .container{
     display:flex;
@@ -586,9 +589,10 @@ font-weight: bold;
 }
 
 .education_strip{
-    height: 100%;
-    font-size: 40px;
-    letter-spacing: 0.5em;
+    height: auto;
+    margin-top:2em;
+    font-size: 35px;
+    letter-spacing: 0.2em;
     text-align: center;
     background-color: rgb(240, 151, 8);
     font-weight:bold;
@@ -603,7 +607,7 @@ font-weight: bold;
 } 
 
 .education .container .box{
-    width:27rem;
+    width:25vw;
     margin:4rem 1rem;
     padding-left:3rem;
     border-left: .2rem solid #fff;
@@ -701,11 +705,20 @@ font-weight: bold;
     display:flex;
     flex-direction: column;
     background-color:lavender;
-    height:100vh;
+    height:auto;
     width:100vw;
     font-family: 'Poppins';
     
  
+}
+.contact .container{
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding: 1rem 0;
+    padding-left: 3rem;   
 }
  .contact #contact-title{
      padding-top:3rem;
@@ -733,10 +746,10 @@ font-weight: bold;
     text-align: center;
     background-color: rgb(240, 151, 8);
     font-weight:bold;
-    
+    margin-top:1em;
     position:absolute;
     margin-left:0;
-    height:100%;
+    height:auto;
 
     writing-mode: vertical-lr;
     text-orientation: upright;
@@ -768,7 +781,7 @@ font-weight: bold;
    
     display:flex;
     align-items:center;
-    font-size:1.5rem;
+    font-size:1.2rem;
     color:black;
     padding:0.5rem 0;
     font-weight: normal;
@@ -795,7 +808,7 @@ font-weight: bold;
     width:100%;
 }
 .contact .container .content form .message{
-    height:10em;
+    height:5em;
     resize:none;
 }
 .contact .container form .box::placeholder{
@@ -811,6 +824,7 @@ font-weight: bold;
     margin-top:3vh;
     border-radius:2em;
     border:none;
+    margin-left: 5em;
     width:8em;
     height:3em;
 }
