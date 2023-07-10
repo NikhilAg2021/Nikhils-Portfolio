@@ -282,7 +282,7 @@ font-weight: bold;
 .description p{
     text-align: justify;
     position:relative;
-    margin-left: 0;
+    margin-left: 10%;
     width: 55vw;
     flex-wrap: auto;
     line-height: 1.5em;
